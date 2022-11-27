@@ -1,0 +1,6 @@
+UIAutomation\Runner\TestRunner.class
+UIAutomation\Page\PassengerDetailPage.class
+UIAutomation\Page\Payment_Flight_Verification_Page.class
+UIAutomation\StepDef\FlightBooking_Step_Definition.class
+UIAutomation\ObjectRepository\FlightSearchPageRepo.class
+UIAutomation\Page\FlightSearchPage.class
