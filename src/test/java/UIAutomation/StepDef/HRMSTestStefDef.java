@@ -1,35 +1,32 @@
 package UIAutomation.StepDef;
 
-import UIAutomation.CommonUtilities.CommonBrowserSelection;
-import UIAutomation.CommonUtilities.CommonUtilities;
+import UIAutomation.Page.OrangeHRMLogin;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import org.openqa.selenium.WebDriver;
 
 import java.io.IOException;
 
-public class HRMSTestStefDef extends CommonBrowserSelection  {
-    @Given("Launch the given Browser {string}")
-    public void launchTheGivenBrowser(String Browser) throws IOException {
-        CommonBrowserSelection.LaunchGenericBrowser(Browser);
-    }
+public class HRMSTestStefDef extends OrangeHRMLogin {
 
-    @When("enter the URL {string} in the address bar of the browser")
-    public void enterTheURLInTheAddressBarOfTheBrowser(String URL) throws IOException {
-        CommonBrowserSelection.launchURL(URL);
-
+    @Given("Launch the given Browser with URL {string}")
+    public void launchTheGivenBrowserWithURL( String URL) {
+        OrangeHRMLogin.BrowserLaunch();
+        OrangeHRMLogin.LaunchURL(URL);
+        OrangeHRMLogin.LoginScreenVerification();
 
     }
 
-    @And("Login Page should be visible")
-    public void loginPageShouldBeVisible() {
+    @When("user has Username and Password")
+    public void userHasUsernameAndPassword() throws InterruptedException {
+        OrangeHRMLogin.UserLogin();
 
     }
 
-    @Then("URL should be launched")
-    public void urlShouldBeLaunched() {
-
+    @Then("User should be able to login")
+    public void userShouldBeAbleToLogin() {
     }
 
 }

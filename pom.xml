@@ -102,8 +102,12 @@
             <version>7.6.0</version>
             <scope>test</scope>
         </dependency>
-
-
+        <!-- https://mvnrepository.com/artifact/org.yaml/snakeyaml -->
+        <dependency>
+            <groupId>org.yaml</groupId>
+            <artifactId>snakeyaml</artifactId>
+            <version>1.32</version>
+        </dependency>
     </dependencies>
     <build>
     <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
