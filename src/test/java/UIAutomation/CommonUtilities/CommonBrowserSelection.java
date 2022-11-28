@@ -98,6 +98,10 @@ public abstract class CommonBrowserSelection  {
         btnlogin.click();
         wait.until(ExpectedConditions.visibilityOf(txtVerificationDashboard));
     }
+    public void BrowserClose()
+    {
+        driver.close();
+    }
 
     public void DashboardLoggedInPage() {
         PageFactory.initElements(driver, this);

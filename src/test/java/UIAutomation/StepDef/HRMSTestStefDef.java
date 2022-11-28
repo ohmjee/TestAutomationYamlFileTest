@@ -27,6 +27,7 @@ public class HRMSTestStefDef extends OrangeHRMLogin {
 
     @Then("User should be able to login")
     public void userShouldBeAbleToLogin() {
+        OrangeHRMLogin.BrowserClose();
     }
 
 }
