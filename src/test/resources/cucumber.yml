@@ -1,3 +1,4 @@
-Login_Credential:
+#Following are the profiles
+Exec: --tags @Test1
   Username: Admin
   Password: admin123
