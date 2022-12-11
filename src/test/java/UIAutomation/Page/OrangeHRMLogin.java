@@ -59,9 +59,13 @@ public class OrangeHRMLogin {
         Thread.sleep(500);
         logger.info("User inside");
     }
-    public static void BrowserClose()
+
+
+     public static void BrowserClose()
     {
         logger.info("Browser Close");
-        driver.close();
+
     }
+
+
 }

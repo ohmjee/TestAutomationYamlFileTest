@@ -1,6 +1,6 @@
 Feature: Login in Orange HRM
 
-  @Test1
+  @Test
   Scenario Outline:
     Given Launch the given Browser with URL "<URL>"
     When user has Username and Password
