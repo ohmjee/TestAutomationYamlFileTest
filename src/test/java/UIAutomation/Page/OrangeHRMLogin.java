@@ -56,7 +56,7 @@ public class OrangeHRMLogin {
         String password = RVFCYF.propFile("Password");
         logger.info("Username:"+username);
         logger.info("Password:"+password);
-        Assert.assertEquals(username,"Admin");
+        Assert.assertEquals("Admin",username);
         driver.findElement(By.xpath("//input[@name='username']")).sendKeys(username);
         driver.findElement(By.xpath("//input[@name='password']")).sendKeys(password);
         driver.findElement(By.xpath("//button[@type='submit']")).click();
