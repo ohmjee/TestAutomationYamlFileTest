@@ -1,7 +1,7 @@
 Feature: Login in Orange HRM
 
   @Test
-  Scenario Outline:
+  Scenario Outline: Test Login
     Given Launch the given Browser with URL "<URL>"
     When user has Username and Password
     Then User should be able to login
