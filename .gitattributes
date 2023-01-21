@@ -1,1 +1,2 @@
-src/test/resources/cucumber.yml filter=git-crypt diff=git-crypt
+SeleniumCucumberFramework/src/main/java/DB/cucumber.yml filter=git-crypt diff=git-crypt
+SeleniumCucumberFramework/src/main/java/Test1/cucumber.yml filter=git-crypt diff=git-crypt
